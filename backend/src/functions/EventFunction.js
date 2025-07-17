@@ -50,3 +50,4 @@ app.http('EventFunction', {
         };
     }
 });
+// all good
