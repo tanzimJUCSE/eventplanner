@@ -12,9 +12,12 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
+"scripts": {
     "build": "react-scripts build",
+    "start": "node server.js",
+    "build-and-start": "npm run build && npm run start",
+    "dev": "react-scripts start",
+    "serve": "npm run build && node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

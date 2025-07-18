@@ -11,7 +11,7 @@ const EventForm = () => {
   const fetchEvents = async () => {
     try {
       // Use absolute path now that backend CORS is configured
-      const res = await fetch('http://localhost:7071/api/EventFunction');
+      const res = await fetch('https://eventplannerfunctions-tan.azurewebsites.net/api/EventFunction');
       if (res.ok) {
         const data = await res.json();
         setEvents(data);
@@ -35,7 +35,7 @@ const EventForm = () => {
     };
 
     try {
-      const res = await fetch('http://localhost:7071/api/EventFunction', {
+      const res = await fetch('https://eventplannerfunctions-tan.azurewebsites.net/api/EventFunction', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
