@@ -1,0 +1,27 @@
+# Node / React / Azure Functions typical ignores
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# React build output
+frontend/build/
+
+# Azure Function build artifacts
+backend/bin/
+backend/obj/
+
+# Zip packages you create for deploy
+*.zip
+backend.zip
+frontend.zip
+
+# Logs
+*.log
+
+# Local secrets/settings
+backend/local.settings.json
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db 
